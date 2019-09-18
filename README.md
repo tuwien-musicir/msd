@@ -6,16 +6,19 @@ The [Million Song Dataset (MSD)](http://labrosa.ee.columbia.edu/millionsong/) [[
 
 The dataset does however not provide an easy download possibility for the audio files, thus researchers are basically limited to the features provided with the dataset. Using a content provider, for which links with unique IDs to the internal database existed in the MSD, we downloaded [audio samples](http://www.ifs.tuwien.ac.at/mir/msd/collectionCharacteristics.html), mostly in the form of 30 or 60 second snippets. Subsequently, we provide a [multitude of features](http://www.ifs.tuwien.ac.at/mir/msd/download.html) extracted from these samples, to allow comparison between them.       
 
+## Contributors
+
+- Alexander Schindler
+- Rudolf Mayer
+- Thomas Lidy
+- Peter Knees
+- Andreas Rauber
+
 ## Ground Truth Assignments
 
 To allow for popular tasks in Music Information retrieval research such as musical genre classification, we  further provide a [categorisation](http://www.ifs.tuwien.ac.at/mir/msd/download.html#groundtruth) of a subset of the collection into genres obtained from the All Music Guide ([allmusic.com](http://allmusic.com)). 
 
-The Million Song Dataset (MSD) is currently the largest music dataset \cite{Bertin-Mahieux2011} and provides meta-data for one million contemporary (until 2011) songs, including attributes such as titles, artist and album names, but also references to third party meta-data repositories such as MusicBrainz or 7Digital over which audio samples can be obtained. 
-
-AllMusic \cite{datta2002} is a Web portal of a large music information database including album reviews, artist biographies as well as expert tagging for albums according into genres, styles, moods and themes. Data-collection is aligned to \cite{schindler2012}. Meta-data was automatically collected from AllMusic using a web-scraping script based on direct string matching to query for artist-release combinations. From the resulting Album Web page genre, style, mood and theme tags were collected (see Table \ref{tab:tags_overview}). 
-%
-
-
+AllMusic is a Web portal of a large music information database including album reviews, artist biographies as well as expert tagging for albums according into genres, styles, moods and themes. Data-collection is aligned to \cite{schindler2012}. Meta-data was automatically collected from AllMusic using a web-scraping script based on direct string matching to query for artist-release combinations. From the resulting Album Web page genre, style, mood and theme tags were collected (see Table \ref{tab:tags_overview}). 
 
 ### Genres
 
@@ -42,3 +45,10 @@ We further provide a number of [splits into training / test sets](http://www.ifs
 
 
 
+# Papers / Studies
+
+- Alexander Schindler and Peter Knees. Multi-Task Music Representation Learning from Multi-Label Embeddings. In Proceedings of the International Conference on Content-Based Multimedia Indexing (CBMI2019). Dublin, Ireland, 4-6 Sept 2019.
+- Alexander Schindler, Thomas Lidy, and Andreas Rauber. Comparing shallow versus deep neural network architectures for automatic music genre classification. In Proceedings of the 9th Forum Media Technology (FMT2016), St. Poelten, Austria, November 23 - November 24 2016. 
+- Alexander Schindler and Andreas Rauber. Capturing the temporal domain in echonest features for improved classification effectiveness. In Adaptive Multimedia Retrieval, Lecture Notes in Computer Science, Copenhagen, Denmark, October 24-25 2012. Springer.
+- Alexander Schindler, Rudolf Mayer, and Andreas Rauber. Facilitating comprehensive benchmarking experiments on the million song dataset. In Proceedings of the 13th International Society for Music Information Retrieval Conference (ISMIR 2012), pages 469-474, Porto, Portugal, October 8-12 2012.
+- Alexander Schindler. Million song dataset integration into the clubmixer framework. In Proceedings of the 12th International Society for Music Information Retrieval Conference (ISMIR 2011), Miami, USA, October 24-28 2011.
